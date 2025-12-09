@@ -6,15 +6,12 @@ import random
 import time
 from datetime import datetime
 from playwright.async_api import async_playwright
-from dotenv import load_dotenv
-
-load_dotenv()
 
 # ==========================================
 # CONFIGURATION
 # ==========================================
-DATA_CSV = os.environ.get("chunk_path")
-PROCESSED_FILE = os.environ.get("processed_file")
+DATA_CSV = "chunk_2_rows_5001_to_10000.csv"
+PROCESSED_FILE = "processed-chunk-2.json"
 LOG_DIR = "logs"
 TARGET_URL = "https://tataminiessay.com/?utm_source=paprika&utm_medium=PIL_HIT10"
 
