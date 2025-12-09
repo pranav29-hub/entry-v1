@@ -1,0 +1,9 @@
+.env 
+
+chunk_1_rows_1_to_5000.csv
+chunk_3_rows_10001_to_15000.csv
+chunk_4_rows_15001_to_20000.csv
+processed-chunk-1.json
+
+automate.py
+logs/
