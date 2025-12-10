@@ -10,8 +10,8 @@ from playwright.async_api import async_playwright
 # ==========================================
 # CONFIGURATION
 # ==========================================
-DATA_CSV = "chunk_2_rows_5001_to_10000.csv"
-PROCESSED_FILE = "processed-chunk-2.json"
+DATA_CSV = "chunk_3_rows_10001_to_15000.csv"
+PROCESSED_FILE = "processed-chunk-3.json"
 LOG_DIR = "logs"
 TARGET_URL = "https://tataminiessay.com/?utm_source=paprika&utm_medium=PIL_HIT10"
 
@@ -23,7 +23,7 @@ IS_CI = os.getenv("CI") == "true"
 MAX_RUNTIME_SECONDS = 5 * 3600 + 50 * 60 
 
 CONFIG = {
-    "headless": True if IS_CI else False,
+    "headless": True,
     "minInterSubmissionDelayMs": 2000,
     "maxInterSubmissionDelayMs": 4000,
     "typingDelayMin": 80,
